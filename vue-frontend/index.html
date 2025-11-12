@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LearnHub - After School Classes</title>
+    <link rel="stylesheet" href="../style.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <nav class="flex">
+        <div class="title flex" style="align-items: center; gap: 5px">
+          <i class="fas fa-graduation-cap"></i>
+          <h2>LearnHub</h2>
+        </div>
+
+        <div class="cartBtn">
+          <button class="flex">
+            <i class="fas fa-shopping-cart"></i> My Cart
+          </button>
+        </div>
+      </nav>
+
+      <div class="hero">
+        <h1>Discover Amazing After-School Classes</h1>
+        <p>
+          Boost your skills with our expert-led courses. Limited spaces
+          available!
+        </p>
+      </div>
+    </header>
+
+    <div class="container">
+      <div class="topline flex">
+        <div class="search flex">
+          <i class="fas fa-search icon"></i>
+          <input
+            type="search"
+            name="search"
+            id="search"
+            placeholder="Search by subject, location, price..."
+          />
+        </div>
+
+        <div class="flex" style="gap: 10px">
+          <div class="sort">
+            <select name="select" id="select">
+              <option value="subject">Sort by Subject</option>
+              <option value="location">Sort by Location</option>
+              <option value="price">Sort by Price</option>
+              <option value="availability">Sort by Availability</option>
+            </select>
+          </div>
+          <div class="order">
+            <button><i class="fas fa-sort"></i></button>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <!-- Art Card -->
+        <div class="card">
+          <div class="top flex">
+            <i class="fas fa-palette icon"></i>
+            <p class="price">£25</p>
+          </div>
+          <div class="itemName">Art</div>
+          <div class="location">
+            <i class="fas fa-map-marker-alt"></i> Bristol
+          </div>
+          <div class="availability">
+            <i class="fas fa-users"></i> 5 spaces left
+          </div>
+          <button><i class="fas fa-cart-plus"></i> Add to Cart</button>
+        </div>
+
+        <!-- Science Card -->
+        <div class="card">
+          <div class="top flex">
+            <i class="fas fa-flask icon"></i>
+            <p class="price">£35</p>
+          </div>
+          <div class="itemName">Science</div>
+          <div class="location">
+            <i class="fas fa-map-marker-alt"></i> Manchester
+          </div>
+          <div class="availability">
+            <i class="fas fa-users"></i> 2 spaces left
+          </div>
+          <button><i class="fas fa-cart-plus"></i> Add to Cart</button>
+        </div>
+
+        <!-- Coding Card -->
+        <div class="card">
+          <div class="top flex">
+            <i class="fas fa-code icon"></i>
+            <p class="price">£45</p>
+          </div>
+          <div class="itemName">Coding</div>
+          <div class="location">
+            <i class="fas fa-map-marker-alt"></i> London
+          </div>
+          <div class="availability">
+            <i class="fas fa-users"></i> 5 spaces left
+          </div>
+          <button><i class="fas fa-cart-plus"></i> Add to Cart</button>
+        </div>
+
+        <!-- Dance Card -->
+        <div class="card">
+          <div class="top flex">
+            <i class="fas fa-child icon"></i>
+            <p class="price">£28</p>
+          </div>
+          <div class="itemName">Dance</div>
+          <div class="location">
+            <i class="fas fa-map-marker-alt"></i> Leeds
+          </div>
+          <div class="availability">
+            <i class="fas fa-users"></i> 4 spaces left
+          </div>
+          <button><i class="fas fa-cart-plus"></i> Add to Cart</button>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <p>&copy; 2023 LearnHub After School Classes. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
