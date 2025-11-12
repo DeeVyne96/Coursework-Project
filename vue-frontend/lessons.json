@@ -1,0 +1,13 @@
+[
+  { "topic": "UX", "location": "London", "price": 30, "space": 5, "icon": "fas fa-pencil-ruler" },
+  { "topic": "FullStack", "location": "Manchester", "price": 35, "space": 5, "icon": "fas fa-laptop-code" },
+  { "topic": "Math", "location": "Oxford", "price": 28, "space": 5, "icon": "fas fa-square-root-alt" },
+  { "topic": "Law", "location": "Cambridge", "price": 40, "space": 5, "icon": "fas fa-gavel" },
+  { "topic": "Robotics", "location": "Bristol", "price": 38, "space": 5, "icon": "fas fa-robot" },
+  { "topic": "French", "location": "Paris", "price": 25, "space": 5, "icon": "fas fa-language" },
+  { "topic": "Muay Thai", "location": "London", "price": 32, "space": 5, "icon": "fas fa-fist-raised" },
+  { "topic": "English", "location": "Leeds", "price": 27, "space": 5, "icon": "fas fa-book" },
+  { "topic": "Taekwondo", "location": "Manchester", "price": 30, "space": 5, "icon": "fas fa-fist-raised" },
+  { "topic": "Business Intelligence", "location": "Birmingham", "price": 36, "space": 5, "icon": "fas fa-chart-line" },
+  { "topic": "Music", "location": "Liverpool", "price": 28, "space": 5, "icon": "fas fa-music" }
+]
