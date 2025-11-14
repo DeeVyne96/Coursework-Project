@@ -2,7 +2,10 @@ const express = require("express");
 const { MongoClient, ObjectId } = require("mongodb");
 const cors = require('cors');
 const app = express();
-const port = 3000;
+require("dotenv").config();
+const port = process.env.PORT || 3000;
+const uri = process.env.MONGO_URI;
+
 
 app.use(cors());
 app.use(express.json());
@@ -70,7 +73,6 @@ app.get("/", (req, res) => {
   res.send("Backend is running!");
 });
 
-const uri = "mongodb+srv://Divine:Divine@nodetut.tjw42zj.mongodb.net/learnhub?retryWrites=true&w=majority";
 const client = new MongoClient(uri);
 let lessonsCollection;
 
