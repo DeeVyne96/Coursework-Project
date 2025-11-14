@@ -10,7 +10,7 @@ router.get("/", async (req, res) => {
     const lessonsCollection = db.collection("lesson");
 
     const searchQuery = req.query.search || "";
-    const sortBy = req.query.sort || "topic"; 
+    const sortBy = req.query.sort || "topic";
     const order = req.query.order === "desc" ? -1 : 1;
 
     const query = searchQuery
@@ -18,11 +18,10 @@ router.get("/", async (req, res) => {
           $or: [
             { topic: { $regex: searchQuery, $options: "i" } },
             { location: { $regex: searchQuery, $options: "i" } },
-            { price: { $regex: searchQuery, $options: "i" } }
-          ]
+            { price: { $regex: searchQuery, $options: "i" } },
+          ],
         }
       : {};
-
     const lessons = await lessonsCollection
       .find(query)
       .sort({ [sortBy]: order })
@@ -35,7 +34,7 @@ router.get("/", async (req, res) => {
   }
 });
 
-// ✅ Clean PUT /lessons/:id
+// PUT /lessons/:id
 router.put("/:id", async (req, res) => {
   try {
     const lessonId = req.params.id;
@@ -44,7 +43,6 @@ router.put("/:id", async (req, res) => {
     if (!updateData || Object.keys(updateData).length === 0) {
       return res.status(400).json({ error: "No data provided for update" });
     }
-
     const db = await connectDB();
     const lessonsCollection = db.collection("lesson");
 
