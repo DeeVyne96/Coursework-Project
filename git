@@ -1,0 +1,4 @@
+So
+Git add . //to add all
+git commit -m "the name of the commit"
+git push //send to github repo. Yes?
